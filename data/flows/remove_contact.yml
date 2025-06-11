@@ -13,7 +13,7 @@ flows:
               - action: utter_remove_contact_cancelled
                 next: END
           - else: remove_contact
-      - id: "remove_contact"
+      - id: remove_contact
         action: remove_contact
         next:
           - if: "slots.return_value == 'success'"
